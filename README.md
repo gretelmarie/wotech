@@ -4,6 +4,7 @@
 ## My skills 
 - Java
 - Python
-- -Github
+- Github
 
-## Second level heading
+## Second level heading 😍
+
