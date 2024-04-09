@@ -33,7 +33,7 @@ public class Main {
   }
   ```
 
-´´´java
+```java
   public class Main {
   public static void main(String[] args) {
     System.out.println("Let's go and check out what is in the fridge!");
@@ -52,4 +52,4 @@ public class Main {
     System.out.println(result);
     // ERROR System.out.println(item1);
   } 
-}´´´
+}```
