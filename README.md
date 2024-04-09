@@ -50,6 +50,6 @@ public class Main {
     }
 
     System.out.println(result);
-    // ERROR System.out.println(item1);
   } 
-}```
+}
+```
