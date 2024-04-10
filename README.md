@@ -109,3 +109,50 @@ class Main {
     }
 }
 ```
+
+```java
+public class Main {
+  public static void main(String[] args) {
+    
+  Float temp =  12.3f;
+
+    if (temp < 5){
+      System.out.println("Wear super warm clothes");
+    }
+    if (temp >= 5 && temp < 15){
+      System.out.println("Wear warm clothes");
+    }
+    else if (temp >= 15 && temp < 30){
+      System.out.println("Wear normal clothes!");
+    }
+    else if (temp >= 30){
+      System.out.println("you need cooling!");
+    }
+    
+    
+   // Temperature
+   // +5 wear super warm
+   // +5 to +15 warm
+  //+15 to +30 normal
+  //+30 and more you need cooling
+    
+    /* NÄIDE 
+    
+    double temp = -15.0;
+
+    if (temp <= 5) {
+      System.out.println("Wear super warm");
+    }
+    else if (temp <= 15) {
+      System.out.println("Wear warm");
+    }
+    else if (temp <= 30) {
+      System.out.println("Wear normal");
+    }
+    else {
+      System.out.println("You need cooling");
+    } */
+  
+  }
+}
+```
