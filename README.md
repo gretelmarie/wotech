@@ -84,3 +84,28 @@ public class Main {
   }
 }
 ```
+
+```java
+
+  import java.util.Scanner;  // Import the Scanner class
+
+class Main {
+    public static void main(String[] args) {
+        Scanner number = new Scanner(System.in);
+        System.out.println("How big is the triangle?");
+
+        int triangle = number.nextInt();
+        int row = 1;
+
+        while (row <= triangle) {
+            int column = 1;
+            while (column <= row) {
+                System.out.print("_");
+                column = column + 1; //või column++
+            }
+            System.out.println(); // Move to the next line after printing underscores for each row
+            row = row + 1; //või row++
+        }
+    }
+}
+```
