@@ -53,3 +53,34 @@ public class Main {
   } 
 }
 ```
+```java
+public class Main {
+  public static void main(String[] args) {
+
+    
+    System.out.println("hh");
+
+    int i = 1;
+    boolean isEven = false;
+    //counts from 0 to 10
+    //provides wether or not the number is even or odd
+    
+    while (i < 10) {
+      String result = ""; 
+      //me anname sellele var-ile value based on if else conditions
+      if(isEven == true){
+        result = "even";
+      }else{
+        result = "odd";
+        }
+      
+      System.out.println(i + " " + result);
+      i = i + 1;
+      isEven = !isEven; 
+      // isEven value is flipped to opposite value in the end of circle. 
+      //isEven == true 1st circle -> isEven == false 2nd circle
+      }
+
+  }
+}
+```
