@@ -211,4 +211,32 @@ public class Main {
       System.out.println(lineResult);
     }
 ```
+GUESS THE NUMBER
+```java
+import java.util.Scanner;
 
+public class Main {
+  public static void main(String[] args) {
+
+    Scanner scanner = new Scanner(System.in);
+
+    int number = 45;
+
+    while(true) {
+      System.out.println("Please guess the number!");
+      int guess = scanner.nextInt();
+      if (guess > number) {
+        System.out.println("Too big!");
+      } else if (guess < number) {
+        System.out.println("Too small!");
+      } else {
+        System.out.println("Correct!");
+        break;
+      }
+    }
+
+    scanner.close();
+
+  }
+}
+```
