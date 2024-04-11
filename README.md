@@ -156,3 +156,33 @@ public class Main {
   }
 }
 ```
+
+TRAINGLE
+```java
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in); //opening a channel for user input
+    int number = scanner.nextInt(); //waiting for a number
+    
+    //1. Get user input - x
+    //2. Create a loop that runs x amount of times
+    //3. Inside the loop, print _ symbol i times
+    
+    String result = ""; //an empty string
+    
+    // int i = 1 teeb kõigepealt selle ainult enne esimese tsükli algust ja lisab väärtuse var-ile
+    // i <= number võrdleb i-d number-iga; kui on siis läheb käima esimene tsükkel. it is a condition we have to meet.
+    // i++ see tehakse iga tsükli lõpus. sama nagu i = i + 1
+    for(int i = 1; i <= number; i++) {  
+      result = result + "_";
+      System.out.println(result);
+    }
+
+    scanner.close();
+  }
+}
+```
+
+
