@@ -184,5 +184,31 @@ public class Main {
   }
 }
 ```
+TEISTPIDI TRAINGLE
+```java
+import java.util.Scanner;
 
+public class Main {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in); //opening a channel for user input
+    int number = scanner.nextInt(); //waiting for a number
+    
+    //4 spaces and 1 _
+    //3 spaces and 2 __
+   //X = 5
+  //spaces = X - i;
+  //underscore = i;
+    
+    String underScore = "_"; //an empty string
+    String space = " "; 
+  
+    for(int i = 1; i <= number; i++) {  
+      int spacesCount = number - i;
+      String lineResult = space.repeat(spacesCount); //just 4 spaces 1. circle
+      String underScoresResult = underScore.repeat(i);
+      lineResult = lineResult + underScoresResult;
+      //int underscores = i;
+      System.out.println(lineResult);
+    }
+```
 
