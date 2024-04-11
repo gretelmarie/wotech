@@ -240,3 +240,37 @@ public class Main {
   }
 }
 ```
+
+WHILE LOOP
+```java
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Please write a number!");
+
+    int number = scanner.nextInt();
+    int i = 1;
+
+    while (i <= number) {
+      
+      if (i % 3 == 0 && i % 5 == 0) {
+        System.out.println("WoTech");
+      } else if (i % 5 == 0) {
+          System.out.println("Tech");
+      } else if (i % 3 == 0) {
+        System.out.println("Wo");
+      } else {
+        System.out.println(i);
+     }
+      i++;
+    }
+
+    scanner.close();
+
+  }
+}
+```
+
