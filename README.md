@@ -274,3 +274,88 @@ public class Main {
 }
 ```
 
+```java
+/* Easy: 
+Fill the array with random numbers
+
+Find the sum of all elements in the array.
+For example in an array like this:
+[2, 3, 5, 1]
+Result: 11 (2 + 3 + 5 + 1)
+
+Find all the elements in the array that is below 0
+[-2, 3, -5, 1]
+Result:
+-2
+-5
+
+Fill the party list with people you would like to invite to the party.
+Check whether or not "Anna" is in the array.
+Check whether or not "Maris" is in the array.
+["Oskars", "Anna", "Andris"]
+Result: 
+"Anna is in the party list"
+"Maris is not in the party list" */
+
+/* import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+
+    int[] numbers = { 4, 7, 10, 12, 5, 8, -1 };
+
+    int sum = 0;
+    int i;
+
+    for (i = 0; i < numbers.length; i++) {
+    sum += numbers[i];
+      }
+
+    System.out.println("Sum of array elements: " + sum);
+
+    }
+  } */
+
+
+/*public class Main {
+  public static void main(String[] args) {
+
+    int[] numbers = { 4, 7, -10, 12, 5, 8, -1 };
+    
+    for (int i = 0; i < numbers.length; i++) {
+      if (numbers[i] < 0){ 
+        System.out.println(numbers[i]);
+    }
+    }
+    }
+  } */
+import java.util.Scanner;
+  
+public class Main {
+    public static void main(String[] args) {
+
+      Scanner name = new Scanner(System.in); 
+      System.out.println("Enter a name: ");
+
+      String guestName = name.nextLine();
+      
+      String[] guests = {"Oskars", "Anna", "Andris"};
+
+
+      boolean isInvited = false;
+
+      for (int i = 0; i < guests.length; i++){
+       if(guests[i].equals(guestName)){
+        isInvited = true;
+        System.out.println(guestName + " is invited");
+        break;
+      }
+    }
+
+      if(!isInvited){
+      System.out.println(guestName + " is not invited");
+    }
+  }
+}
+```
+
